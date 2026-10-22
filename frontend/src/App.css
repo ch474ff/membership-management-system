@@ -769,30 +769,13 @@ table td strong {
 }
 
 
-/* ===== Members directory: Violet SaaS ===== */
-
+/* Members directory layout */
 .filters-row {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 12px;
-  margin: 0 0 22px;
-  padding: 15px;
-  background: #ffffff;
-  border: 1px solid #e9e3f4;
-  border-radius: 15px;
-  box-shadow: var(--shadow-card);
-}
-
-.filters-row input,
-.filters-row select {
-  min-height: 42px;
-  padding: 10px 13px;
-  border: 1px solid #e3dced;
-  border-radius: 10px;
-  background: #fbfaff;
-  color: #281744;
-  font-size: 13px;
+  gap: 10px;
+  margin: 0 0 20px;
 }
 
 .filters-row input {
@@ -800,36 +783,16 @@ table td strong {
   min-width: 180px;
 }
 
-.filters-row select {
-  flex: 0 1 155px;
-}
+@media (max-width: 600px) {
+  .filters-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+  }
 
-.filters-row input::placeholder {
-  color: #9990a8;
-}
-
-.filters-row input:focus,
-.filters-row select:focus {
-  border-color: #8b5cf6;
-  background: #ffffff;
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.12);
-}
-
-.filters-row button {
-  min-height: 42px;
-  padding: 10px 15px;
-  border: 1px solid #ded2f5;
-  border-radius: 10px;
-  background: #f5f0ff;
-  color: #6d28d9;
-  font-size: 13px;
-  font-weight: 700;
-}
-
-.filters-row button:hover {
-  background: #eee5ff;
-  border-color: #c9b5fa;
+  .filters-row select,
+  .filters-row button {
+    width: 100%;
+  }
 }
 
 .table-wrapper {
