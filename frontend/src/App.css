@@ -3264,42 +3264,6 @@ button > *,
     width: 100%;
   }
 }
-/* Fix dropdown option contrast in dark theme */
-.filters-row select {
-  color-scheme: dark;
-  background-color: #101014;
-  color: #f4f4f5;
-}
-
-.filters-row select option {
-  background-color: #17171c;
-  color: #f4f4f5;
-}
-
-.filters-row select option:checked {
-  background-color: #302447;
-  color: #ffffff;
-}
-/* Consistent dark styling for all member filters */
-.filters-row select,
-.filters-row select:focus,
-.filters-row select:active {
-  background-color: #101014 !important;
-  color: #f4f4f5 !important;
-  border-color: rgba(255, 255, 255, 0.13);
-  color-scheme: dark;
-}
-
-.filters-row select:focus {
-  border-color: rgba(167, 139, 250, 0.65);
-  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
-  outline: none;
-}
-
-.filters-row select option {
-  background: #17171c;
-  color: #f4f4f5;
-}
 
 /* ===== Add/Edit Member Form — Dark Glass Refinement ===== */
 
@@ -3901,4 +3865,21 @@ button > *,
     min-height: 34px;
     padding: 7px 10px;
   }
+}
+
+/* Fix native dropdown menu contrast */
+.member-toolbar .filters-row select {
+  background-color: #101014 !important;
+  color: #f4f4f5 !important;
+  color-scheme: dark;
+}
+
+.member-toolbar .filters-row select option {
+  background-color: #17171c !important;
+  color: #f4f4f5 !important;
+}
+
+.member-toolbar .filters-row select option:checked {
+  background-color: #302447 !important;
+  color: #ffffff !important;
 }
