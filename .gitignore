@@ -1,0 +1,43 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies
+backend/vendor/bundle/
+backend/.bundle/
+frontend/node_modules/
+
+# Build outputs
+frontend/dist/
+frontend/dist-ssr/
+
+# Logs, temporary files, and process IDs
+backend/log/*
+!backend/log/.keep
+backend/tmp/*
+!backend/tmp/.keep
+*.log
+
+# Rails storage and uploaded files
+backend/storage/*
+!backend/storage/.keep
+
+# Rails credentials and keys
+backend/config/*.key
+
+# Local editor and operating-system files
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Deployment secrets
+backend/.kamal/secrets
+backend/.kamal/secrets.*
+backend/config/master.key
+
+# Local development backups
+frontend/src/App.backup.css
+frontend/src/App.backup.jsx
+frontend/src/App.before-cleanup.css
