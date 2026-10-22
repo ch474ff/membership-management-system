@@ -3883,3 +3883,179 @@ button > *,
   background-color: #302447 !important;
   color: #ffffff !important;
 }
+
+/* ===== Teams Page Contrast Fix ===== */
+
+/* Make section headings readable */
+.teams-grid > .content-card .section-heading h2 {
+  color: #f4f4f5 !important;
+}
+
+/* Improve description readability */
+.teams-grid > .content-card .section-heading .muted {
+  color: #a1a1aa !important;
+}
+
+/* Make Create team and Assign member buttons readable */
+.teams-grid > .content-card .section-heading .primary-button {
+  background: linear-gradient(135deg, #8b5cf6, #6d28d9) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(167, 139, 250, 0.45) !important;
+  border-radius: 12px;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(109, 40, 217, 0.16);
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.teams-grid > .content-card .section-heading .primary-button:hover {
+  background: linear-gradient(135deg, #a78bfa, #7c3aed) !important;
+  transform: translateY(-1px);
+}
+
+/* Improve team card title and description contrast */
+.team-card h2 {
+  color: #f4f4f5 !important;
+}
+
+.team-card > p {
+  color: #a1a1aa !important;
+}
+
+/* Improve member count readability */
+.team-footer {
+  color: #a1a1aa;
+}
+
+/* ===== Teams Grid and Card Layout ===== */
+
+.teams-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 20px;
+}
+
+/* Keep management panels full width */
+.teams-grid > .content-card {
+  grid-column: 1 / -1;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+/* Consistent team card layout */
+.teams-grid > .team-card {
+  min-width: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 24px;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Consistent title and description spacing */
+.team-card h2 {
+  margin: 20px 0 8px;
+  text-align: center;
+}
+
+.team-card > p {
+  margin: 0 0 20px;
+  min-height: 1.5em;
+  text-align: center;
+}
+
+/* Keep member count separated from the description */
+.team-card .team-footer {
+  margin-top: auto;
+  padding-top: 18px;
+}
+
+/* Member list spacing */
+.team-card .team-members-list {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+/* Responsive layout */
+@media (max-width: 760px) {
+  .teams-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .teams-grid > .content-card,
+  .teams-grid > .team-card {
+    grid-column: 1;
+  }
+
+  .teams-grid > .team-card {
+    padding: 20px;
+  }
+}
+
+/* ===== Teams Member Readability Fix ===== */
+
+.team-member-row strong {
+  display: block;
+  color: #f4f4f5 !important;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.team-member-row small {
+  display: block;
+  margin-top: 4px;
+  color: #a1a1aa !important;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.team-member-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  padding: 12px 0;
+}
+
+.team-member-row > div:last-child {
+  min-width: 0;
+}
+
+.team-member-row .avatar {
+  flex-shrink: 0;
+}
+
+/* Reduce excess space in Teams management panels */
+.teams-grid > .content-card {
+  padding: 20px 24px !important;
+}
+
+.teams-grid > .content-card .section-heading {
+  margin-bottom: 0;
+  align-items: center;
+  min-height: 0;
+}
+
+.teams-grid > .content-card .section-heading h2 {
+  margin-bottom: 6px;
+}
+
+.teams-grid > .content-card .section-heading p {
+  margin-bottom: 0;
+}
+
+.teams-grid > .content-card .section-heading .primary-button {
+  align-self: center;
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .teams-grid > .content-card {
+    padding: 18px !important;
+  }
+}
