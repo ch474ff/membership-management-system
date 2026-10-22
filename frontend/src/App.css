@@ -1490,19 +1490,7 @@ textarea:focus {
   outline: none;
 }
 
-/* Buttons: mostly monochrome, violet only for primary actions */
-.primary-button {
-  background: #f4f4f5;
-  color: #111113 !important;
-  border: 1px solid #f4f4f5;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
-}
 
-.primary-button:hover {
-  background: #dedee3;
-  color: #09090b !important;
-  border-color: #dedee3;
-}
 
 .filters-row button {
   background: rgba(255, 255, 255, 0.055);
