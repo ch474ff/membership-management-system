@@ -454,66 +454,14 @@ tbody tr:last-child td { border-bottom: 0; }
     width: 100%;
   }
 }
-/* Improve team management layout */
-.teams-grid {
-  align-items: start;
-}
-
-.teams-grid > .content-card {
-  grid-column: 1 / -1;
-}
-
-.teams-grid > .content-card .section-heading {
-  align-items: center;
-}
-
-.teams-grid > .content-card .section-heading h2 {
-  color: #25332e;
-}
-
-.teams-grid > .content-card .primary-button {
-  white-space: nowrap;
-  min-width: 135px;
-  flex-shrink: 0;
-}
-
-.team-card h2 {
-  color: #25332e;
-}
-
-.team-card p {
-  color: #66736a;
-}
+/* Team member list structure */
 .team-members-list {
   margin-top: 15px;
-  border-top: 1px solid #edf0ed;
-}
-
-.team-member-row {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 0;
-  border-bottom: 1px solid #edf0ed;
 }
 
 .team-member-row:last-child {
   border-bottom: 0;
 }
-
-.team-member-row strong {
-  display: block;
-  font-size: 12px;
-  color: #334138;
-}
-
-.team-member-row small {
-  display: block;
-  margin-top: 4px;
-  font-size: 11px;
-  color: #849087;
-}
-
 
 /* ===== MemberHub: Violet SaaS dashboard ===== */
 
@@ -1103,115 +1051,7 @@ table td strong {
   }
 }
 
-/* ===== Teams: Violet SaaS redesign ===== */
 
-.teams-grid {
-  align-items: start;
-  gap: 22px;
-}
-
-.teams-grid > .content-card {
-  grid-column: 1 / -1;
-}
-
-.teams-grid > .content-card .section-heading {
-  align-items: center;
-  gap: 16px;
-}
-
-.teams-grid > .content-card .section-heading h2,
-.team-card h2 {
-  color: #281744;
-  font-weight: 800;
-  letter-spacing: -0.4px;
-}
-
-.teams-grid > .content-card .section-heading p,
-.team-card p {
-  color: #81758f;
-  line-height: 1.7;
-}
-
-.teams-grid > .content-card .primary-button {
-  min-width: 135px;
-  flex-shrink: 0;
-  white-space: nowrap;
-}
-
-.team-card {
-  padding: 24px;
-  border: 1px solid #e9e3f4;
-  border-radius: 17px;
-  background: linear-gradient(145deg, #ffffff, #fdfbff);
-  box-shadow: var(--shadow-card);
-  transition: border-color 180ms ease, box-shadow 180ms ease,
-    transform 180ms ease;
-}
-
-.team-card:hover {
-  border-color: #d4c3ff;
-  box-shadow: var(--shadow-hover);
-  transform: translateY(-2px);
-}
-
-.team-card h2 {
-  font-size: 18px;
-}
-
-.team-card p {
-  font-size: 13px;
-}
-
-.team-members-list {
-  margin-top: 18px;
-  border-top: 1px solid #eee8f6;
-}
-
-.team-member-row {
-  padding: 13px 0;
-  border-bottom-color: #eee8f6;
-}
-
-.team-member-row:last-child {
-  border-bottom: 0;
-}
-
-.team-member-row strong {
-  color: #34234b;
-  font-size: 13px;
-}
-
-.team-member-row small {
-  color: #81758f;
-  font-size: 12px;
-}
-
-/* Assignment and team forms */
-.add-member-form {
-  border-color: #e5dcf3;
-  background: linear-gradient(145deg, #ffffff, #fcfaff);
-}
-
-.add-member-form label {
-  color: #504363;
-}
-
-.add-member-form input,
-.add-member-form select,
-.add-member-form textarea {
-  border-color: #e2d9f0;
-  border-radius: 10px;
-  background: #ffffff;
-  color: #281744;
-}
-
-.add-member-form input:focus,
-.add-member-form select:focus,
-.add-member-form textarea:focus {
-  border-color: #8b5cf6;
-  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.12);
-  outline: none;
-}
 
 @media (max-width: 700px) {
   .teams-grid {
@@ -1232,111 +1072,7 @@ table td strong {
   }
 }
 
-/* ===== Teams finishing touches ===== */
-
-/* Make primary button labels readable */
-.primary-button,
-.teams-grid .primary-button,
-.add-member-form .primary-button {
-  color: #ffffff !important;
-}
-
-.primary-button:hover,
-.teams-grid .primary-button:hover,
-.add-member-form .primary-button:hover {
-  color: #ffffff !important;
-}
-
-/* Team card icons */
-.team-card .stat-icon,
-.team-card .team-icon,
-.team-card > svg {
-  color: #6d28d9;
-  background-color: #eee7ff;
-}
-
-/* Avatars inside team cards */
-.team-card .avatar,
-.team-member-row .avatar {
-  background: #eee7ff;
-  color: #6d28d9;
-}
-
-/* Team member count */
-.team-card .team-members-list,
-.team-card .team-member-row {
-  border-color: #eee8f6;
-}
-
-/* Refine card headings and spacing */
-.team-card h2 {
-  color: #281744;
-  font-size: 18px;
-  font-weight: 800;
-}
-
-.team-card p {
-  color: #81758f;
-}
-
-/* Subtle visual feedback */
-.team-card .primary-button:hover {
-  box-shadow: 0 6px 15px rgba(109, 40, 217, 0.2);
-}
-
-@media (max-width: 700px) {
-  .teams-grid {
-    grid-template-columns: minmax(0, 1fr);
-  }
-}
-
-/* ===== Team cards: final refinement ===== */
-
-.teams-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px;
-}
-
-.teams-grid > .content-card {
-  grid-column: 1 / -1;
-}
-
-.team-card {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 24px;
-}
-
-.team-card .stat-icon,
-.team-card .team-icon {
-  background: #eee7ff;
-  color: #6d28d9;
-}
-
-.team-card .team-members-list > svg,
-.team-card .team-member-row > svg {
-  color: #6d28d9;
-}
-
-.team-card .team-member-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 14px 0;
-}
-
-.team-card .team-member-row .avatar {
-  flex-shrink: 0;
-}
-
-.team-card .team-member-row strong {
-  color: #281744;
-}
-
-.team-card .team-member-row small {
-  color: #81758f;
-}
-
+/* Teams responsive layout */
 @media (max-width: 800px) {
   .teams-grid {
     grid-template-columns: minmax(0, 1fr);
@@ -3986,20 +3722,41 @@ button > *,
   color: #ffffff !important;
 }
 
-/* ===== Teams Page Contrast Fix ===== */
+/* ===== Teams Page: Consolidated Styles ===== */
 
-/* Make section headings readable */
+.teams-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 20px;
+}
+
+.teams-grid > .content-card {
+  grid-column: 1 / -1;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 20px 24px !important;
+}
+
+.teams-grid > .content-card .section-heading {
+  margin-bottom: 0;
+  align-items: center;
+  min-height: 0;
+}
+
 .teams-grid > .content-card .section-heading h2 {
   color: #f4f4f5 !important;
+  margin-bottom: 6px;
 }
 
-/* Improve description readability */
-.teams-grid > .content-card .section-heading .muted {
+.teams-grid > .content-card .section-heading p {
   color: #a1a1aa !important;
+  margin-bottom: 0;
 }
 
-/* Make Create team and Assign member buttons readable */
 .teams-grid > .content-card .section-heading .primary-button {
+  align-self: center;
+  flex-shrink: 0;
   background: linear-gradient(135deg, #8b5cf6, #6d28d9) !important;
   color: #ffffff !important;
   border: 1px solid rgba(167, 139, 250, 0.45) !important;
@@ -4014,37 +3771,6 @@ button > *,
   transform: translateY(-1px);
 }
 
-/* Improve team card title and description contrast */
-.team-card h2 {
-  color: #f4f4f5 !important;
-}
-
-.team-card > p {
-  color: #a1a1aa !important;
-}
-
-/* Improve member count readability */
-.team-footer {
-  color: #a1a1aa;
-}
-
-/* ===== Teams Grid and Card Layout ===== */
-
-.teams-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-items: start;
-  gap: 20px;
-}
-
-/* Keep management panels full width */
-.teams-grid > .content-card {
-  grid-column: 1 / -1;
-  min-width: 0;
-  box-sizing: border-box;
-}
-
-/* Consistent team card layout */
 .teams-grid > .team-card {
   min-width: 0;
   width: 100%;
@@ -4056,49 +3782,44 @@ button > *,
   flex-direction: column;
 }
 
-/* Consistent title and description spacing */
 .team-card h2 {
+  color: #f4f4f5 !important;
   margin: 20px 0 8px;
   text-align: center;
 }
 
 .team-card > p {
+  color: #a1a1aa !important;
   margin: 0 0 20px;
   min-height: 1.5em;
   text-align: center;
 }
 
-/* Keep member count separated from the description */
-.team-card .team-footer {
-  margin-top: auto;
-  padding-top: 18px;
+.team-card .stat-icon,
+.team-card .team-icon,
+.team-card > svg {
+  color: #6d28d9;
+  background-color: #eee7ff;
 }
 
-/* Member list spacing */
 .team-card .team-members-list {
   margin-top: 18px;
   padding-top: 16px;
   border-top: 1px solid rgba(255, 255, 255, 0.14);
 }
 
-/* Responsive layout */
-@media (max-width: 760px) {
-  .teams-grid {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 16px;
-  }
-
-  .teams-grid > .content-card,
-  .teams-grid > .team-card {
-    grid-column: 1;
-  }
-
-  .teams-grid > .team-card {
-    padding: 20px;
-  }
+.team-card .team-members-list > svg,
+.team-card .team-member-row > svg {
+  color: #6d28d9;
 }
 
-/* ===== Teams Member Readability Fix ===== */
+.team-card .team-member-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  padding: 12px 0;
+}
 
 .team-member-row strong {
   display: block;
@@ -4116,44 +3837,40 @@ button > *,
   line-height: 1.5;
 }
 
-.team-member-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  min-width: 0;
-  padding: 12px 0;
-}
-
 .team-member-row > div:last-child {
   min-width: 0;
 }
 
-.team-member-row .avatar {
+.team-card .team-member-row .avatar {
   flex-shrink: 0;
+  background: #eee7ff;
+  color: #6d28d9;
 }
 
-/* Reduce excess space in Teams management panels */
-.teams-grid > .content-card {
-  padding: 20px 24px !important;
+.team-card .team-footer {
+  color: #a1a1aa;
+  margin-top: auto;
+  padding-top: 18px;
 }
 
-.teams-grid > .content-card .section-heading {
-  margin-bottom: 0;
-  align-items: center;
-  min-height: 0;
+.team-card .primary-button:hover {
+  box-shadow: 0 6px 15px rgba(109, 40, 217, 0.2);
 }
 
-.teams-grid > .content-card .section-heading h2 {
-  margin-bottom: 6px;
-}
+@media (max-width: 760px) {
+  .teams-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
 
-.teams-grid > .content-card .section-heading p {
-  margin-bottom: 0;
-}
+  .teams-grid > .content-card,
+  .teams-grid > .team-card {
+    grid-column: 1;
+  }
 
-.teams-grid > .content-card .section-heading .primary-button {
-  align-self: center;
-  flex-shrink: 0;
+  .teams-grid > .team-card {
+    padding: 20px;
+  }
 }
 
 @media (max-width: 600px) {
