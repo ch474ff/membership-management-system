@@ -160,8 +160,7 @@ nav { display: grid; gap: 6px; }
   font-size: 13px;
 }
 
-.primary-button { border: 0; background: #286344; color: white; }
-.primary-button:hover { background: #204f36; }
+
 .secondary-button { border: 1px solid #dce4de; background: white; color: #43534a; }
 .full-width { width: 100%; margin-top: 10px; }
 
@@ -1215,14 +1214,7 @@ textarea:focus {
   border-color: #4c3574;
 }
 
-.primary-button {
-  background: linear-gradient(135deg, #8b5cf6, #6d28d9);
-  color: #ffffff !important;
-}
 
-.primary-button:hover {
-  background: linear-gradient(135deg, #a78bfa, #7c3aed);
-}
 
 .table-wrapper {
   border-color: var(--border);
