@@ -915,13 +915,7 @@ table td strong {
 
 /* ===== Member actions and accessibility ===== */
 
-.primary-button {
-  color: #ffffff;
-}
 
-.primary-button:visited {
-  color: #ffffff;
-}
 
 .filters-row input,
 .filters-row select,
