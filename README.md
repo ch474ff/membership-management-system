@@ -2,6 +2,9 @@
 
 A web-based application for managing members and teams through a centralized dashboard. Built using React and Vite for the frontend and Ruby on Rails for the backend API.
 
+## Demo Video
+https://drive.google.com/file/d/1eqqGQTQt1y1SRg9_ShjyokcudUlfwhJj/view?usp=sharing
+
 ## Features
 
 - **Dashboard:** Centralized navigation to the main sections of the application.
