@@ -951,45 +951,6 @@ table td strong {
   transform: none;
 }
 
-.add-member-form {
-  padding: 22px;
-  margin-bottom: 24px;
-  border: 1px solid #e6ddf4;
-  border-radius: 16px;
-  background: linear-gradient(145deg, #ffffff, #fcfaff);
-  box-shadow: var(--shadow-card);
-}
-
-.add-member-form label {
-  color: #504363;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.add-member-form input,
-.add-member-form select {
-  width: 100%;
-  min-height: 42px;
-  padding: 10px 12px;
-  border: 1px solid #e3dced;
-  border-radius: 9px;
-  background: #ffffff;
-  color: #281744;
-}
-
-.add-member-form input:focus,
-.add-member-form select:focus {
-  border-color: #8b5cf6;
-  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.12);
-  outline: none;
-}
-
-@media (max-width: 700px) {
-  .add-member-form {
-    padding: 16px;
-  }
-}
-
 /* ===== Member actions and accessibility ===== */
 
 .primary-button {
